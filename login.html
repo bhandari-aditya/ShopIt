@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>ShopIt</title>
+</head>
+
+<style>
+    .login .form-class {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .login .form-class input {
+        height: 4rem;
+        width: 50%;
+    }
+
+    .login .form-class .btn {
+        width: 30%;
+        bottom: 1rem;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .login .form-class input:not(:last-child) {
+        margin-bottom: 2.5rem;
+        margin-top: 1.5rem;
+        border-radius: 8px;
+        border: 1px dashed black;
+
+    }
+
+    @media only screen and (max-width: 500px) {
+        .login .form-class input {
+            height: 4rem;
+            width: 80%;
+        }
+    }
+</style>
+
+
+<body>
+
+    <header id="home" class="header">
+
+
+        <!-- navigation section start -->
+        <nav class="nav">
+            <div class="navigation container">
+                <div class="logo">
+                    <h1>ShopIt</h1>
+                </div>
+
+                <div class="menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#products" class="nav-link">Products</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        <!-- navigation section end -->
+
+
+        <div class="login-section container">
+            <div class="login">
+                <h1 class="heading">Login</h1>
+                <form class="form-class" action="">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" id="username" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" maxlength="8"
+                        required>
+
+                    <input class="btn" type="submit" value="login"
+                        onclick="if (document.getElementById('password').value == '12345678' && document.getElementById('username').value == '12345678') location.href = 'adminPanel.html' ; else alert('Please check your Email & Password and try again!'); return false;">
+                </form>
+            </div>
+        </div>
+
+    </header>
+    <!-- header section end -->
+
+
+    <!-- Custom Script -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

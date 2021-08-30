@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>ShopIt</title>
+</head>
+
+<style>
+    .heading {
+        margin-top: 2rem;
+    }
+</style>
+
+<body>
+
+
+        <!-- header section start -->
+        <header id="home" class="header">
+
+
+            <!-- navigation section start -->
+            <nav class="nav">
+                <div class="navigation container">
+                    <div class="logo">
+                        <h1>ShopIt</h1>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" onclick="alert('Logged Out Successfully!');" >Log Out</a>
+                        </li>
+                    </ul>
+
+            </nav>
+            <!-- navigation section end -->
+
+            <h1 class="heading">Admin Panel</h1>
+            <div class="admin-panel">
+                <div class="orders container">
+                    <h2>Orders:</h2>
+                    <div class="order-no" id="order-no1">
+                        <ul class="order-info">
+                            <li><b>Name : </b>aditya bhandari</li>
+                            <li><b>Email : </b>example1@gmail.com</li>
+                            <li><b>Address : </b>12, Nehru Colony, Jedi Road, Near Shastri Stadium, Delhi</li>
+                            <li><b>ContactNo : </b>1234567890</li>
+                        </ul>
+                        <div class="order-qty">
+                            Quantity: 1
+                        </div>
+                        <div class="order-img">
+                            <img src="./images/pic1.jpg" width="100" height="100" alt="order">
+                        </div>
+                    </div>
+                    <div class="order-no" id="order-no1">
+                        <ul class="order-info">
+                            <li><b>Name : </b>aditya bhandari</li>
+                            <li><b>Email : </b>example1@gmail.com</li>
+                            <li><b>Address : </b>12, Nehru Colony, Jedi Road, Near Shastri Stadium, Delhi</li>
+                            <li><b>ContactNo : </b>1234567890</li>
+                        </ul>
+                        <div class="order-qty">
+                            Quantity: 1
+                        </div>
+                        <div class="order-img">
+                            <img src="./images/pic2.jpg" width="100" height="100" alt="order">
+                        </div>
+                    </div>
+                    <div class="order-no" id="order-no1">
+                        <ul class="order-info">
+                            <li><b>Name : </b>aditya bhandari</li>
+                            <li><b>Email : </b>example1@gmail.com</li>
+                            <li><b>Address : </b>12, Nehru Colony, Jedi Road, Near Shastri Stadium, Delhi</li>
+                            <li><b>ContactNo : </b>1234567890</li>
+                        </ul>
+                        <div class="order-qty">
+                            Quantity: 1
+                        </div>
+                        <div class="order-img">
+                            <img src="./images/pic3.jpg" width="100" height="100" alt="order">
+                        </div>
+                    </div>
+                    <div class="order-no" id="order-no1">
+                        <ul class="order-info">
+                            <li><b>Name : </b>aditya bhandari</li>
+                            <li><b>Email : </b>example1@gmail.com</li>
+                            <li><b>Address : </b>12, Nehru Colony, Jedi Road, Near Shastri Stadium, Delhi</li>
+                            <li><b>ContactNo : </b>1234567890</li>
+                        </ul>
+                        <div class="order-qty">
+                            Quantity: 1
+                        </div>
+                        <div class="order-img">
+                            <img src="./images/pic4.jpg" width="100" height="100" alt="order">
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+        </header>
+        <!-- header section end -->
+
+        <!-- Custom Script -->
+        <script src="./js/script.js"></script>
+
+        <!-- <script>
+
+
+
+            window.onload = function adminpanel(){
+                let name = JSON.parse(window.localStorage.getItem("fullName"));
+                let email = JSON.parse(window.localStorage.getItem("email"));
+                let address = JSON.parse(window.localStorage.getItem("address"));
+                let city = JSON.parse(window.localStorage.getItem("city"));
+                let state = JSON.parse(window.localStorage.getItem("state"));
+                let pin = JSON.parse(window.localStorage.getItem("pin"));
+
+                var orderNo = document.getElementById("order-no1");
+                
+            };
+        </script> -->
+
+</body>
+
+</html>
